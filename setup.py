@@ -8,6 +8,6 @@ setup(
     author="Richard Lee",
     author_email='richardleelovestoprogram@gmail.com',
     packages=find_packages(),
-    install_requires=[]'pandas','numpy','seaborn']
+    install_requires=['pandas','numpy','seaborn']
 
 )

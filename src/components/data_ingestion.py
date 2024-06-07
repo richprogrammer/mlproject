@@ -22,5 +22,7 @@ class DataIngestion:
         try:
             df=pd.read_csv('notebook\data\stud.csv')
             logging.info('Read the dataset as dataframe')
+
+            os.makedirs(self.ingestion_config.train_data_path)
         except:
             pass

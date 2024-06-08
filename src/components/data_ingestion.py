@@ -23,6 +23,6 @@ class DataIngestion:
             df=pd.read_csv('notebook\data\stud.csv')
             logging.info('Read the dataset as dataframe')
 
-            os.makedirs(self.ingestion_config.train_data_path)
+            os.makedirs(os.path.dirname(self.ingestion_config.train_data_path),exist_ok=True)
         except:
             pass

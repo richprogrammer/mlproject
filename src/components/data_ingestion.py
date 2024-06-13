@@ -33,5 +33,7 @@ class DataIngestion:
             train_set.to.csv(self.ingestion_config.train_data_path,index=False,header=True)
 
             test_set.to.csv(self.ingestion_config.test_data_path,index=False,header=True)
+
+            logging.info("Ingestion of the data is completed")
         except:
             pass

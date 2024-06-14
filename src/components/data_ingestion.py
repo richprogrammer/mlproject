@@ -35,5 +35,11 @@ class DataIngestion:
             test_set.to.csv(self.ingestion_config.test_data_path,index=False,header=True)
 
             logging.info("Ingestion of the data is completed")
-        except:
-            pass
+
+            return(
+                self.ingestion_config.train_data_path,
+                self.ingestion_config.test_data_path,
+
+            )
+        except Exception as e:
+            raise CustomException(e,sys)

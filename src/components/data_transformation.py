@@ -10,3 +10,8 @@ from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
 from src.exception import CustomException
 from src.logger import logging
+import os
+
+
+class DataTransformationConfig:
+    preprocessor_obj_file_path=os.path

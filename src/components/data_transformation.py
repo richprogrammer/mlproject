@@ -22,6 +22,6 @@ class DataTransformation:
 
     def get_data_transformer_object(self):
         try:
-            pass
+            numerical_columns = ["writing_score", "reading_score"]
         except:
             pass

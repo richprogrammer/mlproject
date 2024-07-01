@@ -37,10 +37,18 @@ class DataTransformation:
                     ('scaler', StandardScaler())
 
                 ]
+            )
+            cat_pipeline= Pipeline(
 
+                steps=[
+                    ('imputer', SimpleImputer(strategy='most_frequent')),
+                    ('one_hot_encoder', OneHotEncoder()),
+                    ('scaler', StandardScaler())
+                ]
 
+            )
 
                 
-            )
+            
         except:
             pass

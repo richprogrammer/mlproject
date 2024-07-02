@@ -38,6 +38,7 @@ class DataTransformation:
 
                 ]
             )
+
             cat_pipeline= Pipeline(
 
                 steps=[
@@ -48,7 +49,11 @@ class DataTransformation:
 
             )
 
-                
+            logging.info("Numerical columns standard scaling completed")
+
+            logging.info("Categorical columns encoding completed")
+
+   
             
         except:
             pass

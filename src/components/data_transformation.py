@@ -59,7 +59,10 @@ class DataTransformation:
                     ("cat_pipeline", cat_pipeline, categorical_columns)
 
                 ]
+
             )
+
+            return preprocessor
 
    
             

@@ -67,8 +67,14 @@ class DataTransformation:
             )
 
             return preprocessor
-
-   
             
         except Exception as e:
             raise CustomException(e,sys)
+        
+        def initiate_data_transformatio(self,train_path,test_path):
+
+            try:
+                pass
+
+            except:
+                pass

@@ -78,5 +78,9 @@ class DataTransformation:
                 test_df=pd.read_csv(test_path)
 
                 logging.info("Read train and test data completed")
+
+                logging.info("Obtainining preprocessing object")
+
+                
             except:
                 pass

@@ -82,5 +82,7 @@ class DataTransformation:
                 logging.info("Obtainining preprocessing object")
                 
                 preprocessing_obj=self.get_data_transformer_object()
+
+                target_column_name="math_score"
             except:
                 pass

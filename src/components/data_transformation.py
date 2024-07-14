@@ -85,5 +85,7 @@ class DataTransformation:
 
                 target_column_name="math_score"
                 numerical_columns = ["writing_score", "reading_score"]
+
+                input_feature_train_df=train_df[target_column_name]
             except:
                 pass

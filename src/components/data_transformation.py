@@ -96,6 +96,6 @@ class DataTransformation:
                     f"Applying preprocessing object on training dataframe and testing dataframe"
                     )
                 
-                preprocessing_obj.fit_transform(input_feature_train_df)
+                input_feature_train_arr=preprocessing_obj.fit_transform(input_feature_train_df)
             except:
                 pass

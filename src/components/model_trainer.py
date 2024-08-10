@@ -26,5 +26,11 @@ class ModelTrainerConfig:
 class ModelTrainer:
     def __init__(self):
         self.model_trainer_config=ModelTrainerConfig()
+        
 
+    def initiate_model_trainer(self,train_array,test_array,processor_path):
+        try:
+            logging.info("Split training and test input data")
 
+        except:
+            pass

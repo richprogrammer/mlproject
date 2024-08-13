@@ -47,5 +47,8 @@ class ModelTrainer:
                 "AdaBoost Regressor": AdaBoostRegressor(),
             }
 
+            model_report:dict=evaluate_model(X_train=X_train,y_train=y_train,x_test=X_test,y_test=y_test,
+                                             models=models)
+
         except:
             pass

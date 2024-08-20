@@ -63,6 +63,11 @@ class ModelTrainer:
                 raise CustomException("No best model found")
             logging.info("Best found model on both training and testing dataset")
 
+            save_object(
+                file_path=self.model_trainer_config.trained_model_file_path,
+                obj=best_model
+            )
+
 
             
         except:
